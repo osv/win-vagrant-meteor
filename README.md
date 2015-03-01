@@ -1,9 +1,9 @@
 win-vagrant-meteor
 ------------------
 
-Run Meteor.js windows using Vagrant
+Run Meteor.js in windows using Vagrant
 
-## How run?
+## How to run?
 
 Clone this and run VM
 
@@ -14,7 +14,7 @@ vagrant up
 vagrant ssh
 ```
 
-`shared` folder used for sharing files to VM and host. Copy here your meteor project.
+`shared` folder used for sharing files between VM and host. Copy here your meteor project.
 
 ```shell
 #let clone your project
