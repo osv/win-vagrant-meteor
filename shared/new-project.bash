@@ -26,13 +26,12 @@ APP=${1%/}                      # remove "/" if exist
 STARTSCRIPT="$APP/start.sh"
 MOCKDIR="/home/vagrant/mockmeteor"
 
-
 # purge old
 if [ -d $MOCKDIR/$APP ]; then
     echo "=> Remove old meteor/local ($MOCKDIR/$APP)"
     rm -rf "$MOCKDIR/$APP"
-    mkdir -p "$MOCKDIR/$APP"
 fi
+mkdir -p "$MOCKDIR/$APP"
 
 # move local
 if [ -d "$APP/.meteor/local" ]; then
